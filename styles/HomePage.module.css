@@ -20,7 +20,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(128, 128, 128, 0.596);
+    background: rgb(36,32,0);
+    background: linear-gradient(196deg, rgba(195, 34, 34, 1) 0%, rgba(253, 187, 45, 1) 100%);
     border-radius: 30px;
     height: 500px;
     width: 280px;
@@ -37,7 +38,7 @@
 }
 
 .button {
-    margin-left: 50px;
+    margin-left: 0px;
     margin-top: 20px;
     width: 130px;
     height: 30px;
