@@ -10,16 +10,6 @@ export default function HomePage() {
     const [genero2, setGenero2] = useState('')
     const [tamanho2, setTamanho2] = useState('')
 
-    /* useEffect(() => {
-         fetch()
-             .then(res => res.json())
-             .then(res => {
-                 setRoupas(res.message)
-             })
- 
-     },[])*/
-
-
     const handleFormSubmit = (event) => {
         event.preventDefault()
         const dataToSubmit = {
@@ -32,27 +22,14 @@ export default function HomePage() {
             tamanho2: tamanho2,
 
         }
-        fetch("/api/pedido", {
+        fetch("/api/pedidos", {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ // We should keep the fields consistent for managing this data later
-                nome: nome,
-                telefone: telefone,
-                morada: morada,
-                sexo1: sexo1,
-                tamanho1: tamanho1,
-                sexo2: sexo2,
-                tamanho2: tamanho2,
-            })
-
-            /*const cenas = req.body
-            insertMambos(cenas)*/
-
+            body: JSON.stringify({ ...dataToSubmit })
         })
-        fetch('',)
     }
 
     return (
@@ -83,8 +60,8 @@ export default function HomePage() {
                     Filho 1
                     <br />
                     <label className={styles.label}>Genero:
-                        <input type="radio" name="Genero1" value="Masculino" /> Masculino<br />
-                        <input type="radio" name="Genero1" value="Feminino" /> Feminino<br />
+                        <input type="radio" name="Genero1" value="Masculino" onChange={(event) => setGenero1(event.target.value)}/> Masculino<br />
+                        <input type="radio" name="Genero1" value="Feminino" onChange={(event) => setGenero1(event.target.value)}/> Feminino<br />
                     </label>
                     <br />
                     <br />
@@ -110,8 +87,8 @@ export default function HomePage() {
                     Filho 2
                     <br />
                     <label className={styles.label}>Genero:
-                        <input type="radio" name="Genero2" value="Masculino" /> Masculino<br />
-                        <input type="radio" name="Genero2" value="Feminino" /> Feminino<br />
+                        <input type="radio" name="Genero2" value="Masculino" onChange={(event) => setGenero2(event.target.value)}/> Masculino<br />
+                        <input type="radio" name="Genero2" value="Feminino" onChange={(event) => setGenero2(event.target.value)}/> Feminino<br />
                     </label>
                     <br />
                     <br />

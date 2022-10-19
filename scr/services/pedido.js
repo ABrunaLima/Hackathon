@@ -6,15 +6,16 @@ import {
 
 
 //adicionar um pedido PullClothing
-async function adicionarPedido(name, telefone, morada, sexo1, tamanho1, sexo2, tamanho2) {
+async function adicionarPedido({nome, telefone, morada, genero1, tamanho1, genero2, tamanho2}) {
     const pedido = await inserePedido({
-            name,
+            nome,
             telefone,
             morada,
-            sexo1,
+            genero1,
             tamanho1,
-            sexo2,
+            genero2,
             tamanho2,
+            feitoA: new Date()
 
         })
 
