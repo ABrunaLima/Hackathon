@@ -3,8 +3,8 @@ import styles from "../styles/pedidos.module.css"
 import { NavBarAdmin } from '../scr/Componentes/navbaradmin';
 
 
-export default function ListaPedidos(){
-    const [listaPedidos, setListaPedidos] = useState([])
+export default function Pedido(){
+    /* const [listaPedidos, setListaPedidos] = useState([])
 
 
     async function damePedido() {
@@ -43,5 +43,12 @@ export default function ListaPedidos(){
             </div>
         </div>
 
+    )*/
+
+    return (
+        <div>
+            <NavBarAdmin />
+        </div>
     )
+
 }
