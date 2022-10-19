@@ -3,7 +3,7 @@ import styles from '../../styles/HomePage.module.css'
 
 export default function HomePage() {
     const [name, setName] = useState('')
-    const [fone, setFone] = useState('')
+    const [telefone, setTelefone] = useState('')
     const [morada, setMorada] = useState('')
     const [sexo1, setSexo1] = useState('')
     const [tamanho1, setTamanho1] = useState('')
@@ -37,7 +37,7 @@ export default function HomePage() {
 
     return (
 
-        <div className={styles.maezona}>
+        <div className={styles.container}>
             <h1>Formulário</h1>
             <br />
             <form onSubmit={handleFormSubmit}>
@@ -46,7 +46,7 @@ export default function HomePage() {
                 </label>
                 <br />
                 <label>Telefone :
-                    <input type='text' value={fone} name='telefone' onChange={(event) => setFone(event.target.value)}></input>
+                    <input type='text' value={telefone} name='telefone' onChange={(event) => setFone(event.target.value)}></input>
                 </label>
                 <br />
                 <label>Morada:
