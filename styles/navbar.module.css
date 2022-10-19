@@ -4,7 +4,9 @@
 .nav {
 
     display: flex;
-
+    position: fixed;
+    width: 100%;
+    margin-top: -15px;
     align-items: center;
     justify-content: space-between;
     background: rgb(195, 34, 34);
@@ -27,6 +29,7 @@
 }
 
 .textos {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
