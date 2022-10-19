@@ -5,9 +5,9 @@ export default function HomePage() {
     const [nome, setNome] = useState('')
     const [telefone, setTelefone] = useState('')
     const [morada, setMorada] = useState('')
-    const [sexo1, setSexo1] = useState('')
+    const [genero1, setGenero1] = useState('')
     const [tamanho1, setTamanho1] = useState('')
-    const [sexo2, setSexo2] = useState('')
+    const [genero2, setGenero2] = useState('')
     const [tamanho2, setTamanho2] = useState('')
 
     /* useEffect(() => {
@@ -26,9 +26,9 @@ export default function HomePage() {
             nome: nome,
             telefone: telefone,
             morada: morada,
-            sexo1: sexo1,
+            genero1: genero1,
             tamanho1: tamanho1,
-            sexo2: sexo2,
+            genero2: genero2,
             tamanho2: tamanho2,
 
         }
@@ -39,7 +39,7 @@ export default function HomePage() {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({ // We should keep the fields consistent for managing this data later
-                name: name,
+                nome: nome,
                 telefone: telefone,
                 morada: morada,
                 sexo1: sexo1,
@@ -83,8 +83,8 @@ export default function HomePage() {
                     Filho 1
                     <br />
                     <label className={styles.label}>Genero:
-                        <input type="radio" name="genero" value="Masculino" /> Masculino<br />
-                        <input type="radio" name="genero" value="Feminino" /> Feminino<br />
+                        <input type="radio" name="Genero1" value="Masculino" /> Masculino<br />
+                        <input type="radio" name="Genero1" value="Feminino" /> Feminino<br />
                     </label>
                     <br />
                     <br />
@@ -110,8 +110,8 @@ export default function HomePage() {
                     Filho 2
                     <br />
                     <label className={styles.label}>Genero:
-                        <input type="radio" name="genero" value="Masculino" /> Masculino<br />
-                        <input type="radio" name="genero" value="Feminino" /> Feminino<br />
+                        <input type="radio" name="Genero2" value="Masculino" /> Masculino<br />
+                        <input type="radio" name="Genero2" value="Feminino" /> Feminino<br />
                     </label>
                     <br />
                     <br />
