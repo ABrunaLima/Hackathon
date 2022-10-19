@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import styles from '../styles/admin.module.css'
-import { NavBar } from '../scr/Componentes/navbaradmin'
+import { NavBarAdmin } from '../scr/Componentes/navbaradmin'
 
 
 export default function Doacoes() {
@@ -8,7 +8,7 @@ export default function Doacoes() {
     return (
         <div>
             <div>
-                <NavBar />
+                <NavBarAdmin />
             </div>
 
 
