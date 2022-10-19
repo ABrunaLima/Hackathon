@@ -8,11 +8,11 @@ export function NavBar() {
     const navItems = [
         {
             label: "Home",
-            path: "/"
+            path: "/aboutUs"
         },
         {
             label: "Doar",
-            path: "/lookPage"
+            path: "/doacoes"
         },
 
     ]
