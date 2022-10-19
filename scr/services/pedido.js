@@ -5,7 +5,7 @@ import {
 } from "../data/pedido";
 
 
-//adicionar um pedido PullClothing
+//adicionar um pedido
 async function adicionarPedido({nome, telefone, morada, genero1, tamanho1, genero2, tamanho2}) {
     const pedido = await inserePedido({
             nome,
@@ -16,26 +16,25 @@ async function adicionarPedido({nome, telefone, morada, genero1, tamanho1, gener
             genero2,
             tamanho2,
             feitoA: new Date()
-
         })
 
     return pedido
 }
 
-//mostrar todas as roupas armazenadas no sistema showAllClothes
+//mostrar todos os pedidos
 async function mostraTodosOsPedidos() {
     const pedidos = await mostraPedidos()
-    if (pedidos == undefined) {
-        return "Sem pedidos"
+    if (pedidos === undefined) {
+        return "Sem pedidos."
     }
     return pedidos
 }
 
-//mostrar um pedido pelo id showOneCloth
+//mostrar um pedido pelo id
 async function mostraPedidoPeloId(idPedido) {
     const pedidoUm = await apresentaPedidoPeloId(idPedido)
     if (pedidoUm === undefined) {
-        return "Pedido não encontrado"
+        return "Pedido não encontrado."
     }
     return pedidoUm
 }

@@ -4,7 +4,7 @@ import styles from '../../styles/navbar.module.css'
 
 
 
-export function NavBar() {
+export function NavBarAdmin() {
     const navItems = [
         {
             label: "Armazém",
