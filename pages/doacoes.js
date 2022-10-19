@@ -6,36 +6,30 @@ import HomePage from '../scr/Componentes/homePage'
 export default function Doacoes() {
 
     return (
-        <div>
+        <div className={styles.container1}>
 
             <NavBar />
 
-
-
-
-
             <div className={styles.map}>
-                <p> Seus filhos cresceram e já não sabes oque fazer com a roupa? Ajude outras crianças. Doe para nós!!.</p>
+                <br/>
+                <p><strong> Seus filhos cresceram e já não sabes oque fazer com a roupa? Ajude outras crianças. Doe para nós!!.</strong></p>
+                
+                <p><strong>Endereço:</strong> R. Padre Alberto Neto, 2725-531 Algueirão-Mem Martins</p>
+                <p><strong>Telefone:</strong> 21 926 7080</p>
+               
 
                 <h2>Localização</h2>
-                <img src="/imagens/Mapa.png" />
-                ©<p> Seus aaaaaaaa filhos cresceram e já não sabes oque fazer com a roupa? Ajude outras crianças. Doe para nós!!.</p>
+                
+                <img width={500} src="/imagens/Mapa.png"/>
 
-                <h2>Localização</h2>
-                <img src="/imagens/Mapa.png" />
-
-
-                <HomePage />
+                
+                <div className={styles.hp}>
+                <HomePage />    
+                </div>
+              
             </div>
-
-
-
 
         </div>
 
-
     )
-
-
-
 }
