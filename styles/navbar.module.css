@@ -4,11 +4,15 @@
 .nav {
 
     display: flex;
+    position: fixed;
+    width: 100%;
+    margin-top: -15px;
     align-items: center;
     justify-content: space-between;
-    background-color: transparent;
+    background: rgb(195, 34, 34);
+    background: linear-gradient(196deg, rgba(195, 34, 34, 1) 0%, rgba(253, 187, 45, 1) 100%);
     padding: 10px 50px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 10px rgba(231, 4, 4, 0.15);
 }
 
 .marca {
@@ -20,17 +24,18 @@
 .marca img {
     display: flex;
     justify-content: center;
-    width: 9vh;
+    width: 20vh;
     height: 9vh;
 }
 
 .textos {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
     font-weight: 525;
-    color: black;
+    color: rgb(255, 255, 255);
     gap: 30px;
     padding: 0 20px;
     position: relative;

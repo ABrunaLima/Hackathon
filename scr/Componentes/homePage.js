@@ -48,7 +48,8 @@ export default function HomePage() {
                 tamanho2: tamanho2,
             })
 
-            
+            /*const cenas = req.body
+            insertMambos(cenas)*/
 
         })
         fetch('',)

@@ -1,5 +1,7 @@
 
 import { useRouter } from 'next/router'
+import styles from '../../styles/navbar.module.css'
+
 
 
 export function NavBar() {
@@ -9,26 +11,23 @@ export function NavBar() {
             path: "/"
         },
         {
-            label: "Look",
+            label: "Doar",
             path: "/lookPage"
         },
-        {
-            label: "Closet",
-            path: "/closet"                 //editado, testes de caminho        Daniel
-        }
+
     ]
 
     return (
         <div>
             <nav className={styles.nav}>
                 <div className={styles.marca}>
-                    <img src="/images/logo-my-vest.svg" />
+                    <img src="/imagens/logoletrasbrancas.png" />
                 </div>
                 <div className={styles.textos}>
                     {
                         navItems.map((n, i) => <NavItem key={i} {...n} />)
                     }
-                    <Login />
+
                 </div>
             </nav>
         </div>
