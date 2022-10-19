@@ -1,5 +1,7 @@
 
-
+.container {
+    background-color: red;
+}
 .pedidos {
     margin-top: 150px;
     display: flex;
