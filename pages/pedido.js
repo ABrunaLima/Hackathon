@@ -14,8 +14,8 @@ export default function Pedidos() {
                     <thead>
                         <tr>
                             <th>Data do Pedido</th>
-                            <th>Curso</th>
-                            <th>Duração</th>
+                            <th>Genero</th>
+                            <th>Tamanho</th>
                             <th></th>
                         </tr>
                     </thead>
@@ -25,7 +25,7 @@ export default function Pedidos() {
                             <td data-label="Curso">Ciência da Computação</td>
                             <td data-label="Duração">40h</td>
                             <td>
-                                <button>Matricule-se</button>
+                                <button>Realizar pedido</button>
                             </td>
                         </tr>
                         <tr>
@@ -33,7 +33,7 @@ export default function Pedidos() {
                             <td data-label="Curso">Sistemas de Informação</td>
                             <td data-label="Duração">40h</td>
                             <td>
-                                <button>Matricule-se</button>
+                                <button>Realizar pedido</button>
                             </td>
                         </tr>
                         <tr>
@@ -41,7 +41,7 @@ export default function Pedidos() {
                             <td data-label="Curso">Sistemas para Internet</td>
                             <td data-label="Duração">40h</td>
                             <td>
-                                <button>Matricule-se</button>
+                                <button>Realizar pedido</button>
                             </td>
                         </tr>
                         <tr>
@@ -49,7 +49,7 @@ export default function Pedidos() {
                             <td data-label="Curso">Matemática</td>
                             <td data-label="Duração">80h</td>
                             <td>
-                                <button>Matricule-se</button>
+                                <button>Realizar pedido</button>
                             </td>
                         </tr>
                         <tr>
@@ -57,7 +57,7 @@ export default function Pedidos() {
                             <td data-label="Curso">Design Gráfico</td>
                             <td data-label="Duração">20h</td>
                             <td>
-                                <button>Matricule-se</button>
+                                <button>Realizar pedido</button>
                             </td>
                         </tr>
                     </tbody>
