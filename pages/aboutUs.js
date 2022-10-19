@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import { NavBar } from '../scr/Componentes/navbar'
 import HomePage from '../scr/Componentes/homePage'
 import { useEffect, useState } from 'react'
@@ -28,7 +28,7 @@ export default function AboutUs() {
 
     )
 }
-=======
+
 import { NavBar } from "../scr/Componentes/navbar"
 
 
@@ -46,4 +46,4 @@ export default function SobreNos() {
         )
 }
 
->>>>>>> 11973bed75dd4afa6d5cad69de2e77228400fa27
+
