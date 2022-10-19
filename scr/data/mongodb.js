@@ -1,5 +1,5 @@
 import { MongoClient } from "mongodb"
-const URL = process.env.MONGO_URL ?? "mongodb://localhost:34030"
+const URL = process.env.MONGO_URL ?? "mongodb://localhost:27017"
 
 let client
 async function connectToMongo() {
