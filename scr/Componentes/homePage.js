@@ -32,7 +32,27 @@ export default function HomePage() {
             tamanho2: tamanho2,
 
         }
-        fetch('')
+        fetch("/api/pedido", {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ // We should keep the fields consistent for managing this data later
+                name: name,
+                telefone: telefone,
+                morada: morada,
+                sexo1: sexo1,
+                tamanho1: tamanho1,
+                sexo2: sexo2,
+                tamanho2: tamanho2,
+            })
+
+            /*const cenas = req.body
+            insertMambos(cenas)*/
+
+        })
+        fetch('',)
     }
 
     return (
