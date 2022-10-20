@@ -108,7 +108,6 @@ export default function Formulario() {
                             <option value="10 Anos ">10 Anos </option>
                             <option value="11-12 Anos ">11-12 Anos </option>
                             <option value="13-14 Anos ">13-14 Anos </option>
-
                         </select>
                     </label>
                     <br />
