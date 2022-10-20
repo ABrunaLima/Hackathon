@@ -12,9 +12,27 @@ export default function Armazem() {
           <NavBarAdmin/>
             </div>
             <div className={styles.filtros}>
-lal
+        <div className={styles.tamanhos}>Tamanhos</div>
+        <button>0-6 Meses</button>
+        <button>6-12 Meses</button>
+        <button>1 Ano</button>
+        <button>2 Anos</button>
+        <button>3 Anos</button>
+        <button>4 Anos</button>
+        <button>5 Anos</button>
+        <button>6 Anos</button>
+        <button>7 Anos</button>
+        <button>8 Anos</button>
+        <button>9 Anos</button>
+        <button>10 Anos</button>
+        <button>11-12 Anos</button>
+        <button>13-14 Anos</button>
+       
+         <div className={styles.genero}>Género</div>
+         <button>Masculino</button>
+         <button>Feminino</button>
+</div>
             </div>
-
-            </div>
+            
     )
 }
