@@ -1,6 +1,6 @@
 .container {
     align-items: center;
-    color: #222;
+    color: rgb(0, 0, 0);
     display: flex;
     font-family: 'Roboto', sans-serif;
     height: 100vh;
@@ -13,7 +13,7 @@
     font-weight: 400;
     min-width: 420px;
     width: 100%;
-    border: 1px solid #eee;
+    border: 1px solid rgba(128, 128, 128, 0.281);
     border-collapse: collapse;
     max-width: 992px;
     text-align: left;
@@ -38,7 +38,7 @@
 
 .container table tbody tr {
 
-    border: 1px solid #dad6eb;
+    border: 1px solid #c2c0cc;
     border-radius: 5px;
     display: block;
     padding: 30px;
@@ -67,7 +67,7 @@
 }
 
 .container table tbody td button {
-    background: #927cfe;
+    background: linear-gradient(196deg, rgba(195, 34, 34, 1) 0%, rgba(253, 187, 45, 1) 100%);
     border: none;
     border-radius: 20px;
     box-shadow: 0 4px 8px transparentize(#222, .8);
