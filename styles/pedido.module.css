@@ -3,10 +3,12 @@
     color: rgb(0, 0, 0);
     display: flex;
     font-family: 'Roboto', sans-serif;
+    flex-direction: column;
     height: 100vh;
-    justify-content: center;
+    /* justify-content: center; */
     padding: 30px;
     width: 100vw;
+    margin-top: 220px;
 }
 
 .container table {
@@ -107,7 +109,6 @@
     display: none;
 }
 
-.container table tbody td button:last-child{
+.container table tbody td button:last-child {
     text-align: right;
 }
-
