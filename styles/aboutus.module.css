@@ -36,3 +36,8 @@
 .formulario{
     margin: 100px 0;
 }
+.button {
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
