@@ -1,24 +1,29 @@
 .container1 {
-    background-image:url(../public/imagens/teste7.png);
+    background-image: url(../public/imagens/teste7.png);
     color: black;
-   
+
 }
 
 
 .map {
-   
-
     color: black;
     text-align: center;
     margin-top: 120px;
-
-
 }
-.texto{
+
+.map strong {
+    color: orangered;
+}
+
+.map h2 {
+    color: orangered;
+}
+
+.texto {
     text-align: left;
 }
-.hp{
+
+.hp {
     margin-top: 250px;
     margin-bottom: 200px;
 }
-
