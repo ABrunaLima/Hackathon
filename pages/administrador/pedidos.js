@@ -27,11 +27,16 @@ export default function Pedido(){
             <div className={styles.container}>
                 <div className={styles.pedidos} >
                     {listaPedidos.map((pedido) => {
-                        const { nome, telefone, morada, genero1, tamanho1, genero2, tamanho2, feitoA } = pedido
+                        const { nome, telefone, morada, genero, tamanho, feitoA } = pedido
                         return (
                             <div className={styles.pedido} key={pedido._id}>
                                 <div className={styles.imagem}>
-                                    <span>{JSON.stringify(pedido)}</span>
+                                    <span>{JSON.stringify(pedido.feitoA)}</span>
+                                    <span>{JSON.stringify(pedido.nome)}</span>
+                                    <span>{JSON.stringify(pedido.telefone)}</span>
+                                    <span>{JSON.stringify(pedido.morada)}</span>
+                                    <span>{JSON.stringify(pedido.genero)}</span>
+                                    <span>{JSON.stringify(pedido.tamanho)}</span>
                                 </div>
                                 <div className={styles.info}>
                                     <button>Realizar Pedido</button>
@@ -43,12 +48,6 @@ export default function Pedido(){
             </div>
         </div>
 
-    )
-
-    return (
-        <div>
-            <NavBarAdmin />
-        </div>
     )
 
 }

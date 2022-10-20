@@ -7,6 +7,20 @@ import { Roupas } from "../../scr/assets/roupas";
 
 export default function Armazem() {
     const [roupaFiltrada, setRoupaFiltrada] = useState([])
+    const [listaRoupas, setListaRoupas] = useState([])
+
+
+    async function dameRoupas() {
+        const res = await fetch("/api/armazem")
+        if (res.status === 200) {
+            const json = await res.json()
+            console.log(json)
+            setListaRoupas(json)
+        }
+    }
+    useEffect(() => {
+        dameRoupas()
+    }, [])
 
     const tamanhoFiltrado = (catItem) => {
         let result = Roupas
@@ -57,7 +71,7 @@ export default function Armazem() {
                 <button>Feminino</button>
             </div>
             <div>
-                <ListaRoupa />
+                <ListaRoupa roupas={listaRoupas} />
             </div>
         </div>
 

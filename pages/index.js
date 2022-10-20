@@ -10,7 +10,7 @@ import AboutUs from './aboutUs'
 export default function Home() {
   return (
 
-    <Doacoes />
+    <AboutUs />
 
 
   )
