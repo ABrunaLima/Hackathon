@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import styles from '../styles/doar.module.css'
 import { NavBar } from '../scr/Componentes/navbar'
 import Formulario from '../scr/Componentes/formulario'
+import { FinalBar } from '../scr/Componentes/finalBar'
 
 export default function Doacoes() {
 
@@ -16,6 +17,7 @@ export default function Doacoes() {
                 
                 <p><strong>Endereço:</strong> R. Padre Alberto Neto, 2725-531 Algueirão-Mem Martins</p>
                 <p><strong>Telefone:</strong> 21 926 7080</p>
+                <p><strong>Email:</strong> fundacaorealizar@gmail.com</p>
                
 
                 <h2>Localização</h2>
@@ -26,7 +28,9 @@ export default function Doacoes() {
                 <div className={styles.hp}>
                 <Formulario />    
                 </div>
-              
+                <div>
+                    <FinalBar />
+                </div>              
             </div>
 
         </div>
