@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import styles from "../styles/armazem.module.css"
 import NavBarAdmin from "../scr/Componentes/navbaradmin";
+import { Carrosel } from "../scr/Componentes/carrosel";
 
 export default function Armazem() {
 
@@ -31,6 +32,9 @@ export default function Armazem() {
          <div className={styles.genero}>Género</div>
          <button>Masculino</button>
          <button>Feminino</button>
+</div>
+<div>
+  <Carrosel />
 </div>
             </div>
             
