@@ -68,3 +68,24 @@ export default function Pedidos() {
         </div>
     )
 }
+
+/*export function ListaPedidos(){
+    return (                  
+            <div className={styles.listaContainer}>
+                <div>             
+                {pedidos.map((item) => (
+                    <div className={styles.listas} key={`${item.morada} ${item.nome}`}>
+                    <span className={styles.nome}>{item.nome}</span>
+                    <span className={styles.telefone}>{item.telefone}</span>
+                    <span className={styles.morada}>{item.morada}</span>
+                    <span className={styles.genero}>{item.genero}</span>
+                    <span className={styles.tamanho}>{item.tamanho}</span>
+                    <button>Realizar pedido</button>
+                    </div>
+                ))
+                }
+                </div>
+            </div>
+    )
+}
+*/
