@@ -74,25 +74,24 @@ export default function Formulario() {
                     <br />
                     <label className={styles.label}>Tamanho:
                         < select type='text' value={tamanho} name='tamanho' onChange={(event) => setTamanho(event.target.value)}>
-                            <option value="0-6 Meses ">0-6 Meses </option>
-                            <option value="6-12 Meses ">6-12 Meses </option>
-                            <option value="1 Anos ">1 Anos </option>
-                            <option value="2 Anos ">2 Anos </option>
-                            <option value="3 Anos ">3 Anos </option>
-                            <option value="4 Anos ">4 Anos </option>
-                            <option value="5 Anos ">5 Anos </option>
-                            <option value="6 Anos ">6 Anos </option>
-                            <option value="7 Anos ">7 Anos </option>
-                            <option value="8 Anos ">8 Anos </option>
-                            <option value="9 Anos ">9 Anos </option>
-                            <option value="10 Anos ">10 Anos </option>
-                            <option value="11-12 Anos ">11-12 Anos </option>
-                            <option value="13-14 Anos ">13-14 Anos </option>
+                            <option value="0-6Meses">0-6 Meses</option>
+                            <option value="6-12Meses">6-12 Meses</option>
+                            <option value="1Anos">1 Ano</option>
+                            <option value="2Anos">2 Anos</option>
+                            <option value="3Anos">3 Anos</option>
+                            <option value="4Anos">4 Anos</option>
+                            <option value="5Anos">5 Anos</option>
+                            <option value="6Anos">6 Anos</option>
+                            <option value="7Anos">7 Anos</option>
+                            <option value="8Anos">8 Anos</option>
+                            <option value="9Anos">9 Anos</option>
+                            <option value="10Anos">10 Anos</option>
+                            <option value="11-12Anos">11-12 Anos</option>
+                            <option value="13-14Anos">13-14 Anos</option>
                         </select>
                     </label>
                     <br />
-                    <button onClick={(values, { resetForm }) =>
-                        resetForm({values: "" })} type={'submit'} className={styles.button}>Submeter</button>
+                    <button type={'submit'} className={styles.button}>Submeter</button>
                 </form>
 
 
