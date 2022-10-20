@@ -20,7 +20,7 @@
     background: rgb(36,32,0);
     background: linear-gradient(196deg, rgba(195, 34, 34, 1) 0%, rgba(253, 187, 45, 1) 100%);
     border-radius: 10px;
-    height: 500px;
+    height: 350px;
     width: 280px;
 }
 
@@ -52,7 +52,7 @@
     cursor: pointer;
     background-color:rgba(195, 34, 34, 1);
     color: rgba(253, 187, 45, 1);
-    transition: 0.3s ease-in-out;
+    transition: 0.2s ease-in-out;
     cursor: pointer;
     font-weight: bold;
 

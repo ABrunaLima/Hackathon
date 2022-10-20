@@ -6,15 +6,13 @@ import {
 
 
 //adicionar um pedido
-async function adicionarPedido({nome, telefone, morada, genero1, tamanho1, genero2, tamanho2}) {
+async function adicionarPedido({nome, telefone, morada, genero, tamanho}) {
     const pedido = await inserePedido({
             nome,
             telefone,
             morada,
-            genero1,
-            tamanho1,
-            genero2,
-            tamanho2,
+            genero,
+            tamanho,
             feitoA: new Date()
         })
 
