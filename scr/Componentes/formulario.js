@@ -77,8 +77,8 @@ export default function Formulario() {
                     </label>
                     <br />
                     <label className={styles.label}>Genero:
-                        <input type="radio" name="Genero" value="Masculino" onChange={(event) => setGenero(event.target.value)} /> Masculino<br />
-                        <input type="radio" name="Genero" value="Feminino" onChange={(event) => setGenero(event.target.value)} /> Feminino<br />
+                        <input type="radio" name="Genero" value="Masculino" onChange={(event) => setGenero(event.target.value)} />  Masculino<br />
+                        <input type="radio" name="Genero" value="Feminino" onChange={(event) => setGenero(event.target.value)} />  Feminino<br />
                     </label>
                     <br />
                     <br />
