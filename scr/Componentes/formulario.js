@@ -29,27 +29,18 @@ export default function Formulario() {
             },
             body: JSON.stringify({ ...dataToSubmit })
         })
+        
     }
 
-/*
-    if(handleFormSubmit){
-        setEstado({
-            tipo: "sucesso",
-            mensagem: "Pedido enviado com sucesso!"
-        })
-        return
-    }else if(!handleFormSubmit){
-       setEstado({
-            tipo: "erro",
-            mensagem: "Erro: Pedido não enviado!"
-        })
-    }
-*/
+  
+
+
 
 
     return (
 
 
+     
         <div className={styles.container}>
             <h1>Se necessita de roupa preencha este formulário</h1>
 
