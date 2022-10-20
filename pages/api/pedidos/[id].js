@@ -12,5 +12,9 @@ export default async (req, res) => {
             res.status(404).json({"message": "Pedido não encontrado."})
             return
         }
-    }
+    }else if(req.method === "POST") {
+        const roupasPedido = await adicionarRoupa(req.body)
+        res.status(200).json(roupasPedido)
+        return
+    }  
 }
