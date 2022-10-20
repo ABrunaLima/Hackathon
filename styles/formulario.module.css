@@ -40,12 +40,24 @@
     width: 130px;
     height: 30px;
     border-radius: 30px;
-    background-color: rgba(247, 171, 109, 0.938);
+    background-color: rgb(195, 98, 34);
     box-shadow: 5px;
-    border: 5px orangered;
+    border: none;
     align-items: center;
     margin-left: 50px;
+    color: white;
 }
+
+.button:hover { 
+    cursor: pointer;
+    background-color:rgba(195, 34, 34, 1);
+    color: rgba(253, 187, 45, 1);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
 
 .label {
     width: 100%;
@@ -53,6 +65,8 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
+
 
 
 
