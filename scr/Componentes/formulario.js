@@ -9,6 +9,10 @@ export default function Formulario() {
     const [tamanho1, setTamanho1] = useState('')
     const [genero2, setGenero2] = useState('')
     const [tamanho2, setTamanho2] = useState('')
+    const [estado, setEstado] = useState({ 
+        tipo: "",
+        mensagem: ""
+    })
 
     const handleFormSubmit = (event) => {
         event.preventDefault()
@@ -32,11 +36,30 @@ export default function Formulario() {
         })
     }
 
+/*
+    if(handleFormSubmit){
+        setEstado({
+            tipo: "sucesso",
+            mensagem: "Pedido enviado com sucesso!"
+        })
+        return
+    }else if(!handleFormSubmit){
+       setEstado({
+            tipo: "erro",
+            mensagem: "Erro: Pedido não enviado!"
+        })
+    }
+*/
+
+
     return (
 
 
         <div className={styles.container}>
             <h1>Se necessita de roupa preencha este formulário</h1>
+
+            {estado.tipo === "sucesso" ? <p style={{color: "green"}}>{estado.mensagem}</p> : ""}
+            {estado.tipo === "erro" ? <p style={{color: "red"}}>{estado.mensagem}</p> : ""}
 
             <br />
             <div className={styles.formulario}>

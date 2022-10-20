@@ -11,7 +11,7 @@ export function NavBar() {
             path: "/aboutUs"
         },
         {
-            label: "Doar",
+            label: "Quero ajudar",
             path: "/doacoes"
         },
 

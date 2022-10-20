@@ -45,9 +45,11 @@
     position: relative;
 }
 
-.textos :hover {
-    color: var(--roxo-escuro);
+.textos:hover {
+    color: white;
     transition: 0.3s ease-in-out;
+    font-weight: bolder;
+
     cursor: pointer;
 }
 
@@ -58,36 +60,8 @@
 }
 
 .textos button:hover {
-    color: var(--roxo-escuro);
+    color: white;
+    transition: 0.3s ease-in-out;
     cursor: pointer;
-
-}
-
-.searchBar {
-    color: transparent;
-}
-
-.search {
-    background-color: rgba(0, 0, 0, 0);
-    color: transparent;
-    display: flex;
-}
-
-.search input {
-    background-color: transparent;
-    border: transparent;
-    margin-top: 10px;
-    text-decoration: underline;
-    font-size: 20px;
-}
-
-.search input:focus {
-    outline: none;
-}
-
-.search img {
-    width: 25px;
-    height: 25px;
-    margin-top: 20px;
 
 }
