@@ -7,7 +7,7 @@ import styles from '../../styles/navbar.module.css'
 export function NavBar() {
     const navItems = [
         {
-            label: "Home",
+            label: "Quem somos",
             path: "/aboutUs"
         },
         {

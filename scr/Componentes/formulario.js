@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
-import styles from '../../styles/HomePage.module.css'
+import styles from '../../styles/formulario.module.css'
 
-export default function HomePage() {
+export default function Formulario() {
     const [nome, setNome] = useState('')
     const [telefone, setTelefone] = useState('')
     const [morada, setMorada] = useState('')

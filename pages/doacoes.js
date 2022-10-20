@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import styles from '../styles/doar.module.css'
 import { NavBar } from '../scr/Componentes/navbar'
-import HomePage from '../scr/Componentes/homePage'
+import Formulario from '../scr/Componentes/formulario'
 
 export default function Doacoes() {
 
@@ -24,7 +24,7 @@ export default function Doacoes() {
 
                 
                 <div className={styles.hp}>
-                <HomePage />    
+                <Formulario />    
                 </div>
               
             </div>

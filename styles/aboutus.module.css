@@ -1,7 +1,38 @@
+.container{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    
+}
 .caixa {
-    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.texto {
+
+    margin-top: 50px;
     color: black;
     text-align: center;
+    font-size: x-large;
     
     
+}
+.texto h1{
+    color: orangered;
+}
+
+.logo{
+    display: flex;
+}
+
+.logo img{
+    max-width: 50vw;
+    max-height: 50vh;
+}
+
+.formulario{
+    margin: 100px 0;
 }
