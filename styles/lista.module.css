@@ -1,0 +1,35 @@
+
+.estado{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--verdeBonito);
+    background-color: var(--roxo);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+    height: 70px;
+    margin-right: 300px ;
+    border-radius: 5px;
+}
+
+.listaContainer {
+    background-color: red;
+}
+.listas{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    gap: 65vw;
+    border-style: solid;
+    border-color: var(--roxo);
+    border-width: 2px;
+    padding: 20px;
+    
+    
+}
+.listas span{
+    background-color: transparent;
+    
+}

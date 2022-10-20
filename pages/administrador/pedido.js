@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import styles from "../styles/pedido.module.css"
-import NavBarAdmin from "../scr/Componentes/navbaradmin";
+import styles from "../../styles/pedido.module.css"
+import NavBarAdmin from "../../scr/Componentes/navbaradmin";
 
 export default function Pedidos() {
 

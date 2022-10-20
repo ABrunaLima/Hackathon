@@ -8,11 +8,11 @@ export default function NavBarAdmin() {
     const navItems = [
         {
             label: "Armazém",
-            path: "/"
+            path: "/administrador/armazem"
         },
         {
             label: "Pedidos",
-            path: "/lookPage"
+            path: "/administrador/pedido"
         },
 
     ]

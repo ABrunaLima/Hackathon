@@ -7,13 +7,14 @@ export default function Formulario() {
     const [morada, setMorada] = useState('')
     const [genero, setGenero] = useState('')
     const [tamanho, setTamanho] = useState('')
-    const [estado, setEstado] = useState({ 
+    const [estado, setEstado] = useState({
         tipo: "",
         mensagem: ""
     })
 
     const handleFormSubmit = (event) => {
         event.preventDefault()
+
         const dataToSubmit = {
             nome: nome,
             telefone: telefone,
@@ -29,10 +30,10 @@ export default function Formulario() {
             },
             body: JSON.stringify({ ...dataToSubmit })
         })
-        
+
     }
 
-  
+
 
 
 
@@ -40,12 +41,12 @@ export default function Formulario() {
     return (
 
 
-     
+
         <div className={styles.container}>
             <h1>Se necessita de roupa preencha este formulário</h1>
 
-            {estado.tipo === "sucesso" ? <p style={{color: "green"}}>{estado.mensagem}</p> : ""}
-            {estado.tipo === "erro" ? <p style={{color: "red"}}>{estado.mensagem}</p> : ""}
+            {estado.tipo === "sucesso" ? <p style={{ color: "green" }}>{estado.mensagem}</p> : ""}
+            {estado.tipo === "erro" ? <p style={{ color: "red" }}>{estado.mensagem}</p> : ""}
 
             <br />
             <div className={styles.formulario}>
@@ -66,8 +67,8 @@ export default function Formulario() {
                     </label>
                     <br />
                     <label className={styles.label}>Genero:
-                        <input type="radio" name="Genero" value="Masculino" onChange={(event) => setGenero(event.target.value)}/> Masculino<br />
-                        <input type="radio" name="Genero" value="Feminino" onChange={(event) => setGenero(event.target.value)}/> Feminino<br />
+                        <input type="radio" name="Genero" value="Masculino" onChange={(event) => setGenero(event.target.value)} /> Masculino<br />
+                        <input type="radio" name="Genero" value="Feminino" onChange={(event) => setGenero(event.target.value)} /> Feminino<br />
                     </label>
                     <br />
                     <br />
@@ -90,7 +91,8 @@ export default function Formulario() {
                         </select>
                     </label>
                     <br />
-                    <button type={'submit'} className={styles.button}>Submeter</button>
+                    <button onClick={(values, { resetForm }) =>
+                        resetForm({values: "" })} type={'submit'} className={styles.button}>Submeter</button>
                 </form>
 
 

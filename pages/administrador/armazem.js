@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import styles from "../styles/armazem.module.css"
-import NavBarAdmin from "../scr/Componentes/navbaradmin";
-import { Carrosel } from "../scr/Componentes/carrosel";
+import styles from "../../styles/armazem.module.css"
+import NavBarAdmin from "../../scr/Componentes/navbaradmin";
+import { ListaRoupa } from "../../scr/Componentes/listaRoupa";
 
 export default function Armazem() {
 
@@ -34,7 +34,7 @@ export default function Armazem() {
          <button>Feminino</button>
 </div>
 <div>
-  <Carrosel />
+  <ListaRoupa />
 </div>
             </div>
             
