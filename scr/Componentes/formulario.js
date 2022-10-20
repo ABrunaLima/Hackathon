@@ -33,6 +33,16 @@ export default function Formulario() {
 
     }
 
+    const handleState = (event) => {
+        event.preventDefault()
+
+        setNome("")
+        setTelefone("")
+        setTamanho("")
+        setGenero("")
+        setMorada("")
+    }
+
 
 
 
@@ -91,7 +101,7 @@ export default function Formulario() {
                         </select>
                     </label>
                     <br />
-                    <button type={'submit'} className={styles.button}>Submeter</button>
+                    <button onClick={handleState} type={'submit'} className={styles.button}>Submeter</button>
                 </form>
 
 
