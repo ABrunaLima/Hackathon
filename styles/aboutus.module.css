@@ -1,9 +1,10 @@
-.container{
+.container {
     margin-top: 200px;
     display: flex;
     flex-direction: column;
-    
+
 }
+
 .caixa {
     display: flex;
     flex-direction: column;
@@ -17,25 +18,28 @@
     color: black;
     text-align: center;
     font-size: x-large;
-    
-    
+
+
 }
-.texto h1{
+
+.texto h1 {
     color: orangered;
 }
 
-.logo{
+.logo {
     display: flex;
+
 }
 
-.logo img{
+.logo img {
     max-width: 50vw;
     max-height: 50vh;
 }
 
-.formulario{
+.formulario {
     margin: 100px 0;
 }
+
 .button {
     display: flex;
     align-items: center;
