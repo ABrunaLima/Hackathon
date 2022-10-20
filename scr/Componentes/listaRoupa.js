@@ -1,7 +1,9 @@
 import { Roupas } from "../assets/roupas"
 import styles from "../../styles/lista.module.css"
+import { useState } from "react"
 
 export function ListaRoupa({ roupas }) {
+   
     return (
         <div className={styles.listaContainer}>
             <div>

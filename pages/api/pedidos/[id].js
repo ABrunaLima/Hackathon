@@ -1,3 +1,4 @@
+import { adicionarRoupa, adicionarRoupaAPedido } from "../../../scr/services/armazem";
 import { mostraPedidoPeloId } from "../../../scr/services/pedido";
 
 export default async (req, res) => {
@@ -13,7 +14,7 @@ export default async (req, res) => {
             return
         }
     }else if(req.method === "POST") {
-        const roupasPedido = await adicionarRoupa(req.body)
+        const roupasPedido = await adicionarRoupaAPedido(req.body.roupaId, req.body.pedidoId)
         res.status(200).json(roupasPedido)
         return
     }  

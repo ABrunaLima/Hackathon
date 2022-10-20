@@ -10,6 +10,13 @@ async function insereRoupa(roupa) {
     return (await collection.insertOne(roupa)).insertedId
 
 }
+async function insereRoupaEmPedido(roupaId, pedidoId) {
+    const collection = await getMongoCollection(DB_NAME, COLLECTION_NAME)
+    return await collection.updateOne({ _id: ObjectId(roupaId) }, { $set: { pedidoId: ObjectId(pedidoId) } })
+
+}
+
+
 
 async function insereRoupas(roupas) {
     const collection = await getMongoCollection(DB_NAME, COLLECTION_NAME)
@@ -34,5 +41,6 @@ export {
     insereRoupa,
     insereRoupas,
     mostraRoupas,
+    insereRoupaEmPedido,
     mostraRoupaPeloId
 }

@@ -34,7 +34,7 @@ export default function Formulario() {
     }
 
     const handleState = (event) => {
-        event.preventDefault()
+        // event.preventDefault()
 
         setNome("")
         setTelefone("")

@@ -19,9 +19,6 @@ export default function Pedidos() {
         damePedido()
     }, [])
 
-
-
-
     return (
         <div>
             <NavBarAdmin />

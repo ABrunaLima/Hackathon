@@ -4,6 +4,7 @@ import {
     mostraRoupas,
     mostraRoupaPeloId,
     insereRoupas,
+    insereRoupaEmPedido,
 } from "../data/armazem";
 
 export async function adicionarRoupasIniciais() {
@@ -18,6 +19,11 @@ async function adicionarRoupa(pathToImage, tamanho, categoria, genero) {
         categoria,
         genero
     })
+    return roupa
+}
+
+async function adicionarRoupaAPedido(roupaId, pedidoId) {
+    const roupa = await insereRoupaEmPedido(roupaId, pedidoId)
     return roupa
 }
 
@@ -44,5 +50,6 @@ async function apresentaRoupa(idRoupa) {
 export {
    adicionarRoupa,
    mostraTodasRoupas,
-   apresentaRoupa
+   apresentaRoupa,
+   adicionarRoupaAPedido
 }
