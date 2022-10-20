@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 import styles from "../../styles/pedidos.module.css"
-import { NavBarAdmin } from '../../scr/Componentes/navbaradmin';
+import NavBarAdmin from "../../scr/Componentes/navbaradmin";
 
 
 export default function Pedido(){
-    /* const [listaPedidos, setListaPedidos] = useState([])
+    const [listaPedidos, setListaPedidos] = useState([])
 
 
     async function damePedido() {
@@ -29,9 +29,9 @@ export default function Pedido(){
                     {listaPedidos.map((pedido) => {
                         const { nome, telefone, morada, genero1, tamanho1, genero2, tamanho2, feitoA } = pedido
                         return (
-                            <div className={styles.pedido} key={id}>
+                            <div className={styles.pedido} key={pedido._id}>
                                 <div className={styles.imagem}>
-                                    <span>{pedido}</span>
+                                    <span>{JSON.stringify(pedido)}</span>
                                 </div>
                                 <div className={styles.info}>
                                     <button>Realizar Pedido</button>
@@ -43,7 +43,7 @@ export default function Pedido(){
             </div>
         </div>
 
-    )*/
+    )
 
     return (
         <div>

@@ -11,6 +11,12 @@ async function insereRoupa(roupa) {
 
 }
 
+async function insereRoupas(roupas) {
+    const collection = await getMongoCollection(DB_NAME, COLLECTION_NAME)
+    return (await collection.insertMany(roupas))
+
+}
+
 //mostra a roupa pelo do Id
 async function mostraRoupaPeloId(roupaId) {
     const collection = await getMongoCollection(DB_NAME, COLLECTION_NAME)
@@ -26,6 +32,7 @@ async function mostraRoupas() {
 
 export {
     insereRoupa,
+    insereRoupas,
     mostraRoupas,
     mostraRoupaPeloId
 }

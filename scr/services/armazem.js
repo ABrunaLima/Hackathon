@@ -1,9 +1,14 @@
+import { Roupas } from "../assets/roupas";
 import {
     insereRoupa,
     mostraRoupas,
     mostraRoupaPeloId,
-} from "../data/clothing";
+    insereRoupas,
+} from "../data/armazem";
 
+export async function adicionarRoupasIniciais() {
+    await insereRoupas(Roupas)
+}
 
 //adicionar uma roupa a base de dados
 async function adicionarRoupa(pathToImage, tamanho, categoria, genero) {
