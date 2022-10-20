@@ -43,6 +43,8 @@
     background-color: rgba(247, 171, 109, 0.938);
     box-shadow: 5px;
     border: 5px orangered;
+    align-items: center;
+    margin-left: 50px;
 }
 
 .label {
