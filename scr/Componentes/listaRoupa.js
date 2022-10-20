@@ -7,9 +7,9 @@ export function ListaRoupa({ roupas }) {
             <div>
                 {roupas.map((item, i) => (
                     <div className={styles.listas} key={`${item.tamanho} ${item.categoria} ${i}`}>
-                        <span className={styles.categoria}>{item.categoria}</span>
-                        <span className={styles.tamanho}>{item.tamanho}</span>
-                        <span className={styles.genero}>{item.genero}</span>
+                        <div className={styles.categoria}>{item.categoria}</div>
+                        <div className={styles.tamanho}>{item.tamanho}</div>
+                        <div className={styles.genero}>{item.genero}</div>
                     </div>
                 ))
                 }

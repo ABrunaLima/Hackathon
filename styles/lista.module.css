@@ -16,20 +16,21 @@
     gap: 20vw;
     border-style: 1px solid;
     text-align: center;
-    align-items: center;
+    align-items: flex-end;
     margin-right: 10px;
-
+    justify-content: center;
 
 
 }
 
-.listas span {
+.listas div {
     background-color: rgba(0, 0, 255, 0);
+    max-width: 10px;
 
 }
 
 .categoria {
-    text-align: center;
+    text-align: flex-start;
     display: flex;
 }
 
