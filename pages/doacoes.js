@@ -12,7 +12,7 @@ export default function Doacoes() {
 
             <div className={styles.map}>
                 <br/>
-                <p><strong> Seus filhos cresceram e já não sabes oque fazer com a roupa? Ajude outras crianças. Doe para nós!!.</strong></p>
+                <p><strong>Os seus filhos cresceram e tem roupa em casa boa que já não lhes serve? Doe-nos e ajude outras crianças!!</strong></p>
                 
                 <p><strong>Endereço:</strong> R. Padre Alberto Neto, 2725-531 Algueirão-Mem Martins</p>
                 <p><strong>Telefone:</strong> 21 926 7080</p>

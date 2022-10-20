@@ -36,7 +36,7 @@ export default function Formulario() {
 
 
         <div className={styles.container}>
-            <h1>Se necessita de roupa preencha este formulario</h1>
+            <h1>Se necessita de roupa preencha este formulário</h1>
 
             <br />
             <div className={styles.formulario}>

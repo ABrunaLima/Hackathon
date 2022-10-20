@@ -1,13 +1,10 @@
 .container {
-    color: black;
+    color:white;
     background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
-
     flex-direction: column;
-
-
 }
 
 .form {
@@ -43,10 +40,8 @@
     width: 130px;
     height: 30px;
     border-radius: 30px;
-    background-color: rgba(128, 128, 128, 0.375);
-
-
-
+    background-color: rgba(255, 255, 255, 0.856);
+    box-shadow: 5px;
 }
 
 .label {
